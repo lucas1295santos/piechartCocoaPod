@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		16042FD21F8E7C9500DD699F /* PieChartPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 16042FD01F8E7C9500DD699F /* PieChartPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16CD14F71F8E852C00296C12 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CD14F61F8E852900296C12 /* PieChartView.swift */; };
+		16CD14F91F8E853E00296C12 /* PieChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CD14F81F8E853E00296C12 /* PieChartData.swift */; };
+		26DC2DAEDF1B97F8D5A3CEF1 /* Pods_PieChartPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76B03BF65EF8D4DC8149FB9 /* Pods_PieChartPod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16042FCD1F8E7C9500DD699F /* PieChartPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PieChartPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16042FD01F8E7C9500DD699F /* PieChartPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PieChartPod.h; sourceTree = "<group>"; };
 		16042FD11F8E7C9500DD699F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CD14F61F8E852900296C12 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		16CD14F81F8E853E00296C12 /* PieChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartData.swift; sourceTree = "<group>"; };
+		21CDA7174C0367E30B3631B4 /* Pods-PieChartPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieChartPod.release.xcconfig"; path = "Pods/Target Support Files/Pods-PieChartPod/Pods-PieChartPod.release.xcconfig"; sourceTree = "<group>"; };
+		C76B03BF65EF8D4DC8149FB9 /* Pods_PieChartPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PieChartPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6337A400EC770905093FCE1 /* Pods-PieChartPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieChartPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PieChartPod/Pods-PieChartPod.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26DC2DAEDF1B97F8D5A3CEF1 /* Pods_PieChartPod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +41,8 @@
 			children = (
 				16042FCF1F8E7C9500DD699F /* PieChartPod */,
 				16042FCE1F8E7C9500DD699F /* Products */,
+				EC6CBACDEE352AC222C772A2 /* Pods */,
+				5BD29E46698CD91E5B2EEDCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +57,29 @@
 		16042FCF1F8E7C9500DD699F /* PieChartPod */ = {
 			isa = PBXGroup;
 			children = (
+				16CD14F61F8E852900296C12 /* PieChartView.swift */,
+				16CD14F81F8E853E00296C12 /* PieChartData.swift */,
 				16042FD01F8E7C9500DD699F /* PieChartPod.h */,
 				16042FD11F8E7C9500DD699F /* Info.plist */,
 			);
 			path = PieChartPod;
+			sourceTree = "<group>";
+		};
+		5BD29E46698CD91E5B2EEDCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C76B03BF65EF8D4DC8149FB9 /* Pods_PieChartPod.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC6CBACDEE352AC222C772A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6337A400EC770905093FCE1 /* Pods-PieChartPod.debug.xcconfig */,
+				21CDA7174C0367E30B3631B4 /* Pods-PieChartPod.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16042FD51F8E7C9500DD699F /* Build configuration list for PBXNativeTarget "PieChartPod" */;
 			buildPhases = (
+				B566251C084F2723BBEA7C4C /* [CP] Check Pods Manifest.lock */,
 				16042FC81F8E7C9500DD699F /* Sources */,
 				16042FC91F8E7C9500DD699F /* Frameworks */,
 				16042FCA1F8E7C9500DD699F /* Headers */,
 				16042FCB1F8E7C9500DD699F /* Resources */,
+				445DB29721172671BE6205F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -95,6 +127,7 @@
 				TargetAttributes = {
 					16042FCC1F8E7C9500DD699F = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,11 +159,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		445DB29721172671BE6205F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PieChartPod/Pods-PieChartPod-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B566251C084F2723BBEA7C4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16042FC81F8E7C9500DD699F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16CD14F71F8E852C00296C12 /* PieChartView.swift in Sources */,
+				16CD14F91F8E853E00296C12 /* PieChartData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +320,9 @@
 		};
 		16042FD61F8E7C9500DD699F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6337A400EC770905093FCE1 /* Pods-PieChartPod.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lucasSantos.PieChartPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,7 +344,9 @@
 		};
 		16042FD71F8E7C9500DD699F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21CDA7174C0367E30B3631B4 /* Pods-PieChartPod.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
